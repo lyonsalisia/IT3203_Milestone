@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment Quiz | IT 3203 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Interactive Self-Assessment Quiz</h1>
+        <p>Test your knowledge based on your Milestone 1 materials. You have 10 minutes to complete the 10 questions.</p>
+
+        <div id="timer-container">
+            Time Remaining: <span id="timer">10:00</span>
+        </div>
+
+        <div id="results-dashboard" class="hidden">
+            <h2>Quiz Results</h2>
+            <div id="overall-status" class="status-box"></div>
+            <p><strong>Total Score:</strong> <span id="final-score"></span>/10 (<span id="final-percentage"></span>%)</p>
+            <p><strong>Time Spent:</strong> <span id="time-spent"></span></p>
+            <div id="question-breakdown"></div>
+            <button id="retake-btn" onclick="resetQuiz()">Retake / Reset Quiz</button>
+        </div>
+
+        <form id="quiz-form">
+            <div class="question-card">
+               <p><strong>1.</strong> HTML stands for HyperText Markup <input type="text" name="q1" placeholder="Enter answer" style="width: 140px; display: inline-block; margin: 0 5px;"> Language.</p>
+            <div class="question-card">
+            <p><strong>2.</strong> CSS is used to style and layout <input type="text" name="q2" placeholder="Enter answer" style="width: 140px; display: inline-block; margin: 0 5px;"> pages.</p>
+            </div>
+            <div class="question-card">
+                <p><strong>3.</strong> Which HTML tag is used to define an internal style sheet?</p>
+                <label><input type="radio" name="q3" value="A"> A) &lt;script&gt;</label>
+                <label><input type="radio" name="q3" value="B"> B) &lt;style&gt;</label>
+                <label><input type="radio" name="q3" value="C"> C) &lt;css&gt;</label>
+                <label><input type="radio" name="q3" value="D"> D) &lt;design&gt;</label>
+            </div>
+            <div class="question-card">
+                <p><strong>4.</strong> Which property is used to change the background color in CSS?</p>
+                <label><input type="radio" name="q4" value="A"> A) color</label>
+                <label><input type="radio" name="q4" value="B"> B) bgcolor</label>
+                <label><input type="radio" name="q4" value="C"> C) background-color</label>
+                <label><input type="radio" name="q4" value="D"> D) background</label>
+            </div>
+            <div class="question-card">
+                <p><strong>5.</strong> Inside which HTML element do we put the JavaScript?</p>
+                <label><input type="radio" name="q5" value="A"> A) &lt;javascript&gt;</label>
+                <label><input type="radio" name="q5" value="B"> B) &lt;js&gt;</label>
+                <label><input type="radio" name="q5" value="C"> C) &lt;script&gt;</label>
+                <label><input type="radio" name="q5" value="D"> D) &lt;code&gt;</label>
+            </div>
+            <div class="question-card">
+                <p><strong>6.</strong> Which of the following are valid CSS layout models? (Select all that apply)</p>
+                <label><input type="checkbox" name="q6" value="Flexbox"> Flexbox</label>
+                <label><input type="checkbox" name="q6" value="Grid"> Grid</label>
+                <label><input type="checkbox" name="q6" value="Float"> Float</label>
+                <label><input type="checkbox" name="q6" value="BlockChain"> BlockChain</label>
+            </div>
+            <div class="question-card">
+                <p><strong>7.</strong> How do you write "Hello World" in an alert box in JavaScript?</p>
+                <label><input type="radio" name="q7" value="A"> A) alertBox("Hello World");</label>
+                <label><input type="radio" name="q7" value="B"> B) msg("Hello World");</label>
+                <label><input type="radio" name="q7" value="C"> C) alert("Hello World");</label>
+                <label><input type="radio" name="q7" value="D"> D) msgBox("Hello World");</label>
+            </div>
+            <div class="question-card">
+                <p><strong>8.</strong> Which CSS property controls text size?</p>
+                <label><input type="radio" name="q8" value="A"> A) font-size</label>
+                <label><input type="radio" name="q8" value="B"> B) text-size</label>
+                <label><input type="radio" name="q8" value="C"> C) text-style</label>
+                <label><input type="radio" name="q8" value="D"> D) font-style</label>
+            </div>
+            <div class="question-card">
+                <p><strong>9.</strong> What does DOM stand for?</p>
+                <label><input type="radio" name="q9" value="A"> A) Document Object Model</label>
+                <label><input type="radio" name="q9" value="B"> B) Data Object Management</label>
+                <label><input type="radio" name="q9" value="C"> C) Digital Oriented Markup</label>
+                <label><input type="radio" name="q9" value="D"> D) Dynamic Operational Method</label>
+            </div>
+            <div class="question-card">
+                <p><strong>10.</strong> Which operator is used to assign a value to a variable in JavaScript?</p>
+                <label><input type="radio" name="q10" value="A"> A) -</label>
+                <label><input type="radio" name="q10" value="B"> B) *</label>
+                <label><input type="radio" name="q10" value="C"> C) =</label>
+                <label><input type="radio" name="q10" value="D"> D) ==</label>
+            </div>
+            <button type="button" id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
