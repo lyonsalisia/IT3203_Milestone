@@ -3,32 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topic 1 - Research Subtopic</title>
+    <title>Topic 1: HTML5 Fundamentals - Web Dev Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Topic 1: Subtopic Title</h1>
+    <!-- Header Section utilizing ID selector style -->
+    <header id="main-header">
+        <h1>Web Development Hub</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="topic1.html">Topic 1</a></li>
                 <li><a href="topic2.html">Topic 2</a></li>
                 <li><a href="key-concepts.html">Key Concepts</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
                 <li><a href="references.html">References</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Research Section 1</h2>
-        <p>Add your first subtopic content here...</p>
+    <!-- Main Content Container -->
+    <main class="container">
+        <section>
+            <h2>Topic 1: HTML5 Fundamentals</h2>
+            <p>HTML (HyperText Markup Language) is the backbone of all web pages. It provides the structure and semantic meaning of content displayed on the internet using a system of elements and tags.</p>
+            
+            <!-- Added Image Requirement -->
+            <div class="image-container" style="text-align: center; margin: 20px 0;">
+                <img src="https://via.placeholder.com/600x300.png?text=HTML5+Structure+Diagram" alt="HTML5 Structure Diagram" style="max-width: 100%; height: auto; border-radius: 8px;">
+                <p style="font-size: 0.9rem; color: #666;"><em>Figure 1: Visual representation of a standard HTML document hierarchy.</em></p>
+            </div>
+
+            <h3>Core HTML5 Elements Comparison</h3>
+            <p>Different tags serve distinct semantic purposes in modern web architecture. Below is a quick breakdown of common structural elements:</p>
+
+            <!-- Added Table Requirement -->
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="background-color: #2c3e50; color: white;">
+                        <th style="border: 1px solid #ddd; padding: 10px;">Tag</th>
+                        <th style="border: 1px solid #ddd; padding: 10px;">Category</th>
+                        <th style="border: 1px solid #ddd; padding: 10px;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;"><code><header></code></td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Structural</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Represents introductory content or navigation links.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;"><code><section></code></td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Semantic</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Defines a thematic grouping of content.</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;"><code><footer></code></td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Structural</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">Contains metadata, copyright, or contact links.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Class project for IT 3203. Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank">course website</a>.</p>
+        <p>© 2026 Web Development Hub | All Rights Reserved</p>
     </footer>
 </body>
 </html>

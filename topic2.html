@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topic 2 - Research Subtopic</title>
+    <title>Topic 2: CSS3 Styling & Layout - Web Dev Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Topic 2: Second Subtopic Title</h1>
+    <!-- Header Section -->
+    <header id="main-header">
+        <h1>Web Development Hub</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="topic1.html">Topic 1</a></li>
                 <li><a href="topic2.html">Topic 2</a></li>
                 <li><a href="key-concepts.html">Key Concepts</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
                 <li><a href="references.html">References</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Research Section 2</h2>
-        <p>Add your second research subtopic content, tables, lists, or images here...</p>
+    <!-- Main Content Container -->
+    <main class="container">
+        <section>
+            <h2>Topic 2: CSS3 Styling & Responsive Layout</h2>
+            <p>CSS (Cascading Style Sheets) controls the visual presentation, layout, typography, and responsiveness of HTML documents across different screen sizes and devices.</p>
+
+            <h3>Modern CSS Layout Systems</h3>
+            <p>Modern web interfaces rely on flexible layout models rather than rigid positioning to adapt seamlessly between desktop monitors and mobile screens:</p>
+            <ul>
+                <li><strong>Flexbox (Flexible Box Layout):</strong> Ideal for one-dimensional layouts, such as aligning navigation bar items horizontally or centering elements inside a container.</li>
+                <li><strong>CSS Grid:</strong> Designed for two-dimensional layouts, allowing developers to manage rows and columns simultaneously for complex page structures.</li>
+                <li><strong>Media Queries:</strong> Conditional CSS rules (<code>@media</code>) that apply specific styles when a viewport reaches a defined width threshold.</li>
+            </ul>
+
+            <h3>CSS Selector Specificity Hierarchy</h3>
+            <p>When multiple CSS rules target the same element, browsers determine which style takes priority based on selector specificity:</p>
+            <ol>
+                <li><strong>Inline Styles:</strong> Applied directly inside an HTML tag's <code>style</code> attribute (highest priority).</li>
+                <li><strong>ID Selectors (<code>#id</code>):</strong> Targets a single unique element on the page.</li>
+                <li><strong>Class Selectors (<code>.class</code>):</strong> Targets groups of elements sharing the same class name.</li>
+                <li><strong>Element Selectors (<code>tag</code>):</strong> Targets all instances of a standard HTML tag globally (lowest priority).</li>
+            </ol>
+        </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Class project for IT 3203. Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank">course website</a>[cite: 1].</p>
+        <p>© 2026 Web Development Hub | All Rights Reserved</p>
     </footer>
 </body>
 </html>
